@@ -1,0 +1,35 @@
+.h-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    h1{
+        height: 40px;
+        line-height: 30px;
+        i{
+            font-size: 18px;
+        }
+        
+    }
+}
+.router-link-active{
+    background-color: salmon;
+    color: white;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    align-items: center;
+    li{
+        height: auto;
+        background-color: #ccc;
+        color: black;
+    }
+    a{
+        display: block;
+        padding: 2px 10px;
+        text-decoration: none;
+    }
+}

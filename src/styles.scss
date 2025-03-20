@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;padding: 0;
+    list-style: none;
+}
+.l-flex{
+    display: flex;
+    height: 100%;
+    app-navbar{
+        width: 200px;
+        background-color: pink;
+    }
+    .main{
+        flex-grow: 1;
+    }
+}
+// .modal-wrapper{
+//     border-radius: 20px !important;
+// }
+:root{
+    .modal-wrapper{
+        --border-radius:10px;
+    }
+}

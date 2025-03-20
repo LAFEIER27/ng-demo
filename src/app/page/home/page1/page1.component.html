@@ -1,0 +1,8 @@
+<div style="border: 1px solid #999; padding: 10px; margin: 10px;box-sizing: border-box;">
+    <h3>page1组件({{msg}})</h3>
+    <br>
+    <app-child  (sendMsg)="getMsg($event)">
+        <b s1>插槽内容1</b>
+        <i s2>插槽内容2</i>
+    </app-child>
+</div>

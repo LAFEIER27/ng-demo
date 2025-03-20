@@ -1,0 +1,9 @@
+app-header{
+    height: 80px;
+    background-color: cadetblue;
+    color: white;
+    display: block;
+}
+.container{
+    height: calc(100vh - 80px);
+}
