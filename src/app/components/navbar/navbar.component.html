@@ -1,6 +1,12 @@
 <ul>
+  <ng-container *ngIf="list.length > 0">
     <li *ngFor="let item of list">
-        <a [routerLink]="item.path" routerLinkActive="router-link-active" >{{item.text}}</a>
+      <a [routerLink]="item.path" routerLinkActive="router-link-active">{{
+        item.text
+      }}</a>
     </li>
+  </ng-container>
+  <ng-container *ngIf="list.length === 0">
+    <h2 style="text-align: center; line-height: 60px">无子路由</h2>
+  </ng-container>
 </ul>
-

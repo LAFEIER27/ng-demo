@@ -1,4 +1,16 @@
 <div class="l-flex">
-    <app-navbar></app-navbar>
-    <div class="main">商品组件</div>
+  <app-navbar [list]="[]"></app-navbar>
+  <div class="main">
+    <h3>商品组件</h3>
+    <ion-list padding>
+      <ion-item *ngFor="let item of list">
+        <ion-label>name:{{ item.name }}</ion-label>
+        <ion-label>价格：{{ item.price }}元</ion-label>
+        <ion-label>数量：{{ item.count }}件</ion-label>
+        <ion-button routerLink="/detail" [queryParams]="{ id: item.id }">
+          详情
+        </ion-button>
+      </ion-item>
+    </ion-list>
+  </div>
 </div>

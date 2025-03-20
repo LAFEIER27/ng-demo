@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {FormsModule }  from '@angular/forms'
-import {IonicModule} from '@ionic/angular'
+import { FormsModule } from '@angular/forms';
+import { IonicModule } from '@ionic/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +20,10 @@ import { MeComponent } from './page/system/me/me.component';
 import { ChildComponent } from './page/home/page1/child/child.component';
 import { HightlightDirective } from './utils/hightlight.directive';
 import { ModalContentComponent } from './page/home/page2/modal-content/modal-content.component';
+import { CopComponent } from './page/home/page3/cop/cop.component';
+import { DetailComponent } from './page/detail/detail.component';
+import { NotFoundComponent } from './page/not-found/not-found.component';
+import { GetPlaceDirective } from './utils/get-place.directive';
 
 @NgModule({
   declarations: [
@@ -38,15 +42,19 @@ import { ModalContentComponent } from './page/home/page2/modal-content/modal-con
     MeComponent,
     ChildComponent,
     HightlightDirective,
-    ModalContentComponent
+    ModalContentComponent,
+    CopComponent,
+    DetailComponent,
+    NotFoundComponent,
+    GetPlaceDirective,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    IonicModule.forRoot()
+    IonicModule.forRoot(),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

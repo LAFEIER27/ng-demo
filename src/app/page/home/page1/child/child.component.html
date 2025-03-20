@@ -1,11 +1,11 @@
-
-<div style="border: 1px solid #ccc; padding: 10px;">
-    <p>child 组件
-       <ng-content select="[s1]"></ng-content>
-       <ng-content select="[s2]"></ng-content>
-    </p>
-<br>
-<input type="text" placeholder="消息数据" [(ngModel)]="sendmsg">
-    <br>
-    <button (click)="senData()">传递给父组件</button>
+<div style="border: 1px solid #ccc; padding: 10px">
+  <p>
+    <span>child 组件</span>
+    <ng-content select="[s1]"></ng-content>
+    <ng-content select="[s2]"></ng-content>
+  </p>
+  <br />
+  <input type="text" placeholder="消息数据" [(ngModel)]="sendmsg" />
+  <br />
+  <button (click)="senData()">传递给父组件</button>
 </div>
