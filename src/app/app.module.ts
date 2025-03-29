@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +25,7 @@ import { CopComponent } from './page/home/page3/cop/cop.component';
 import { DetailComponent } from './page/detail/detail.component';
 import { NotFoundComponent } from './page/not-found/not-found.component';
 import { GetPlaceDirective } from './utils/get-place.directive';
+import { Page4Component } from './page/home/page4/page4.component';
 
 @NgModule({
   declarations: [
@@ -47,12 +49,14 @@ import { GetPlaceDirective } from './utils/get-place.directive';
     DetailComponent,
     NotFoundComponent,
     GetPlaceDirective,
+    Page4Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     IonicModule.forRoot(),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -13,6 +13,22 @@ export class Page3Component implements OnInit {
       this.msg = 'data2';
     }, 1000);
   }
-
+  list: any[] = [
+    {
+      id: 1,
+      name: '张三',
+      hobby: ['唱', '跳'],
+    },
+    {
+      id: 2,
+      name: '李四',
+      hobby: ['唱', 'rap'],
+    },
+    {
+      id: 3,
+      name: '王五',
+      hobby: ['练球', '跳'],
+    },
+  ];
   ngOnInit(): void {}
 }

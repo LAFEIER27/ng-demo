@@ -1,5 +1,24 @@
-<div>
+<div style="padding: 10px">
   <p>page3 works!</p>
   <app-cop [msg]="msg" [nameVal]="nameVal"></app-cop>
   page3Input:<input type="text" [(ngModel)]="nameVal" placeholder="name" />
+  <br />
+  <br />
+  <hr />
+  <ion-list>
+    <ng-container *ngFor="let item of list">
+      <ng-container
+        *ngTemplateOutlet="
+          itemBox;
+          context: { $implicit: item.hobby, name: item.name }
+        "
+      ></ng-container>
+    </ng-container>
+  </ion-list>
+  <ng-template #itemBox let-data let-name="name">
+    <ion-item>
+      <ion-label>{{ name }}</ion-label>
+      <ion-label slot="end">{{ data.join(" | ") }}</ion-label>
+    </ion-item>
+  </ng-template>
 </div>

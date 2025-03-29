@@ -5,4 +5,23 @@
         <b s1>插槽内容1</b>
         <i s2>插槽内容2</i>
     </app-child>
+    <br/>
+   <ion-button (click)="getData()">
+     get data
+   </ion-button>
+  {{resData | json}}
+  <br/>
+  <ion-list style="border: 1px solid #ccc;width: 200px; padding: 20px">
+    <ion-item>
+      <ion-label>账号</ion-label>
+      <ion-input placeholder="输入账号" [(ngModel)]="info.name" [clearInput]="true"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>密码</ion-label>
+      <ion-input placeholder="输入密码" type="password" [(ngModel)]="info.psd" [clearInput]="true"></ion-input>
+    </ion-item>
+    <ion-button (click)="login()" style="margin-top: 20px">
+      LOGIN
+    </ion-button>
+  </ion-list>
 </div>

@@ -3,6 +3,7 @@
   "cli": {
     "analytics": "a19acb34-8ef9-45b5-9160-15f8cdefa7fa"
   },
+
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -31,7 +32,12 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
             ],
             "styles": [
               "src/styles.scss"
