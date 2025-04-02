@@ -11,10 +11,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { ComponentsModule } from './components/components.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LayoutComponent,
-  ],
+  declarations: [AppComponent, LayoutComponent],
   imports: [
     RouterModule,
     BrowserModule,
@@ -22,7 +19,7 @@ import { ComponentsModule } from './components/components.module';
     FormsModule,
     IonicModule.forRoot(),
     HttpClientModule,
-    ComponentsModule
+    ComponentsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

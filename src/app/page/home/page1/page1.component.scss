@@ -1,0 +1,13 @@
+.posi {
+  border: 1px solid #ccc;
+  width: 100px;
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+  img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

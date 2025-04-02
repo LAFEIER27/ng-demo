@@ -11,11 +11,12 @@ import { Page1Component } from './page1/page1.component';
 import { Page2Component } from './page2/page2.component';
 import { Page3Component } from './page3/page3.component';
 import { Page4Component } from './page4/page4.component';
-import {ModalContentComponent} from './page2/modal-content/modal-content.component';
-import {ChildComponent} from './page1/child/child.component';
-import {CopComponent} from './page3/cop/cop.component';
-import {ComponentsModule} from '../../components/components.module';
-import {PopiModule} from '../../popi/popi.module';
+import { ModalContentComponent } from './page2/modal-content/modal-content.component';
+import { ChildComponent } from './page1/child/child.component';
+import { CopComponent } from './page3/cop/cop.component';
+import { ComponentsModule } from '../../components/components.module';
+import { PopiModule } from '../../popi/popi.module';
+import { GetCNnumberPipe } from '../../utils/get-cnnumber.pipe';
 
 @NgModule({
   imports: [
@@ -24,7 +25,7 @@ import {PopiModule} from '../../popi/popi.module';
     IonicModule,
     HomeRoutingModule,
     ComponentsModule,
-    PopiModule
+    PopiModule,
   ],
   declarations: [
     HomeComponent,
@@ -35,6 +36,7 @@ import {PopiModule} from '../../popi/popi.module';
     ModalContentComponent,
     ChildComponent,
     CopComponent,
-  ]
+    GetCNnumberPipe,
+  ],
 })
 export class HomeModule {}
