@@ -17,6 +17,8 @@ import { CopComponent } from './page3/cop/cop.component';
 import { ComponentsModule } from '../../components/components.module';
 import { PopiModule } from '../../popi/popi.module';
 import { GetCNnumberPipe } from '../../utils/get-cnnumber.pipe';
+import { AgTestComponent } from './ag-test/ag-test.component';
+import { AgGridModule } from 'ag-grid-angular';
 
 @NgModule({
   imports: [
@@ -26,6 +28,7 @@ import { GetCNnumberPipe } from '../../utils/get-cnnumber.pipe';
     HomeRoutingModule,
     ComponentsModule,
     PopiModule,
+    AgGridModule
   ],
   declarations: [
     HomeComponent,
@@ -37,6 +40,7 @@ import { GetCNnumberPipe } from '../../utils/get-cnnumber.pipe';
     ChildComponent,
     CopComponent,
     GetCNnumberPipe,
+    AgTestComponent,
   ],
 })
 export class HomeModule {}

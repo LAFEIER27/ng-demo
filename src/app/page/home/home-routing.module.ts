@@ -1,11 +1,12 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
 
-import { HomeComponent } from './home.component';
-import { Page1Component } from './page1/page1.component';
-import { Page2Component } from './page2/page2.component';
-import { Page3Component } from './page3/page3.component';
-import { Page4Component } from './page4/page4.component';
+import {HomeComponent} from './home.component';
+import {Page1Component} from './page1/page1.component';
+import {Page2Component} from './page2/page2.component';
+import {Page3Component} from './page3/page3.component';
+import {Page4Component} from './page4/page4.component';
+import {AgTestComponent} from './ag-test/ag-test.component';
 
 const routes: Routes = [
   {
@@ -14,8 +15,12 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'page1',
+        redirectTo: 'ag-test',
         pathMatch: 'full',
+      },
+      {
+        path: 'ag-test',
+        component: AgTestComponent,
       },
       {
         path: 'page1',
@@ -41,4 +46,5 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class HomeRoutingModule {}
+export class HomeRoutingModule {
+}

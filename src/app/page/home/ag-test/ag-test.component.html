@@ -1,0 +1,40 @@
+
+<ion-content>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        ag-test works!
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+<!--  <ag-grid-angular-->
+<!--    #agGridAngular-->
+<!--    style="width: 100%; height: 500px;"-->
+<!--    class="ag-theme-alpine"-->
+<!--    [rowData]="rowData"-->
+<!--    [columnDefs]="columnDefs"-->
+<!--    [gridOptions]="gridOptions"-->
+<!--    (rowClicked)="rowClick($event)"-->
+<!--  >-->
+<!--  </ag-grid-angular>-->
+  <ag-grid-angular
+    #agGridAngular
+    style="width: 100%; height: 500px;"
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [gridOptions]="gridOptions"
+    (rowClicked)="rowClick($event)"
+  >
+    <ag-grid-column headerName="#" valueGetter="node.rowIndex + 1" width="50"></ag-grid-column>
+    <ag-grid-column *ngFor="let col of columnDefs"
+                    [field]="col.field"
+                    [headerName]="col.headerName"
+    >
+    </ag-grid-column>
+    <ag-grid-column headerName="操作A"
+                    [cellRenderer]="agGridColumnDefs"
+    ></ag-grid-column>
+  </ag-grid-angular>
+</ion-content>
+
+

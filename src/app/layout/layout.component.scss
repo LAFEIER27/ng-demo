@@ -1,9 +1,12 @@
-app-header{
-    height: 80px;
-    background-color: cadetblue;
-    color: white;
-    display: block;
+app-header {
+  height: 80px;
+  background-color: #243561;
+  color: white;
+  display: block;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
 }
-.container{
-    height: calc(100vh - 80px);
+
+.container {
+  height: calc(100vh - 80px);
 }

@@ -24,6 +24,10 @@ export class HomeComponent implements OnInit {
       path: 'page4',
       text: '页面4',
     },
+    {
+      path: 'ag-test',
+      text: 'ag-test',
+    }
   ];
   ngOnInit(): void {}
 }

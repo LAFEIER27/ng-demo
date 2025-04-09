@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'ag-grid-community/src/styles/ag-grid.scss';
+@import 'ag-grid-community/src/styles/ag-theme-alpine/sass/ag-theme-alpine.scss';
+
 *{
     margin: 0;padding: 0;
     list-style: none;
@@ -8,7 +11,7 @@
     height: 100%;
     app-navbar{
         width: 200px;
-        background-color: pink;
+        background-color:  #243561;
     }
     .main{
         flex-grow: 1;
